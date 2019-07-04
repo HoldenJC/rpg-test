@@ -22,8 +22,8 @@ export class Player {
 
 
   setArea(map){
-      this.currentArea = map.areaMap[this.areaCount];
-      this.areaCount++;
+    this.currentArea = map.areaMap[this.areaCount];
+    this.areaCount++;
   }
 
 
@@ -68,7 +68,9 @@ export class AreaMap {
 }
 
 export class Area {
-  constructor(lookArea, itemsArea){
+  constructor(areaBg, fleeToArea, lookArea, itemsArea){
+    this.areaBg = areaBg;
+    this.fleeToArea = fleeToArea;
     this.lookArea = lookArea;
     this.itemsArea = itemsArea;
   }

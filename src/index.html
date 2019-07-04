@@ -5,8 +5,10 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="jumbotron">
+    <div id="bg">
+  <div class="container">
+    
+    <div class="jumbotron shadow">
       <h1 class="display-1">Text Quest RPG</h1>
     </div>
 
@@ -22,16 +24,12 @@
         <option value="archer">Archer</option>
       </select>
       <br>
-      <!-- <select id="armorSelect" class="form-control">
-        <option selected disabled hidden>Choose Your Armor</option>
-        <option value="sword">Sword</option>
-        <option value="shell">Shell</option>
-        <option value="bow">Bow</option>
-      </select> -->
-
+      
       <button type="submit" name="button" class="btn btn-dark">Begin Your Journey</button>
 
     </form>
+
+    <div id="gameArea" class="card mx-auto">
 
     <div id="commandLegend">
       <p>Type <strong>LOOK</strong> to observe your surroundings</p>
@@ -41,15 +39,17 @@
       <p>Type <strong>FIGHT</strong> to battle any enemies in the current area</p>
       <p>Type <strong>TAKE</strong> then what you want to take to add it to your inventory</p>
     </div>
+    <button id="legendToggle" class="btn btn-info">Toggle Guide</button>
 
-    <div id="journeyStart"><span class="heroName"></span> awoke in a dark cave, alone and confused.</div>
+    <div id="journeyStart"></div>
 
     <div id="playerCommandDiv">
       <input id="playerCommand" type="text" placeholder="(type commands here)" class="form-control">
       <button id="commandCheck" type="button" class="btn btn-dark">Confirm</button>
     </div>
 
-
+  </div>
+</div>
   </div>
 </body>
 

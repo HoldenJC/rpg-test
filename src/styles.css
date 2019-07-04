@@ -1,24 +1,70 @@
 .jumbotron {
+  margin-top: 20px;
+  background: rgba(233, 236, 239, 0.75) !important;
   text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
+
+.card {
+  background: rgba(233, 236, 239, 0.75) !important;
+}
+
+label {
+  color: white; 
+}
+
+#bg {
+  background-image: url("https://i.redd.it/lhowjn1ycgv01.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100%;
+  background-position: center;
+  overflow: hidden;
+}
+
+#legendToggle {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+#gameArea {
+  margin-top: 20vh;
+  margin-bottom: 30vh;
+  height: 50vh;
+  min-height: 100%;
+}
+
+/* .cave {
+  background-image: url("https://i.pinimg.com/originals/36/09/a5/3609a58f09f1c9c87fea4cf875b564b7.gif");
+} */
 
 #userPlayer, #journeyStart {
   text-align: center;
 }
 
-#journeyStart, #commandLegend, #playerCommandDiv {
+#journeyStart, #commandLegend, #playerCommandDiv, #gameArea {
   display: none;
 }
 
 #journeyStart {
-  margin-bottom: 100px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #commandLegend {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #playerCommand {
@@ -32,6 +78,13 @@
   margin-right: auto;
   text-align-last: center;
   text-align: center;
+}
+
+#gameArea #playerCommandDiv {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
 }
 
 #commandCheck {
